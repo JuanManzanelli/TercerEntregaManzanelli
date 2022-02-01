@@ -1,0 +1,271 @@
+/* Electricidad-Manzanelli */
+* {
+  margin: none;
+  padding: none;
+  text-decoration: none;
+}
+
+/* Variables */
+/* mixin */
+/* Inicio */
+.inicioBody {
+  background-color: #ffbe0b;
+}
+
+#novedadesCompras {
+  height: 550px;
+  width: 10px;
+  background-image: url(../img/novedades.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* bootstrap */
+.slide {
+  margin-top: 50px;
+}
+
+.slide img {
+  height: 90vh;
+}
+
+.novedadesTitulo {
+  color: #ffbe0b;
+}
+
+.clientes {
+  background-image: url(./img/clientes2022.jpg);
+  height: 60vh;
+}
+
+.clientes {
+  background-repeat: no-repeat;
+  background-color: #ffbe0b;
+  background-position: center;
+}
+
+#publicacionEpec h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#publicacionEpec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 700px) {
+  .publicacionImagen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 85%;
+    height: auto;
+  }
+}
+
+#footer {
+  color: white;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+/* Titulo Cliente */
+.tituloCliente {
+  padding: 130px;
+}
+
+.tituloCliTabla {
+  font-family: fantasy;
+}
+
+.tablaCliente {
+  font-family: fantasy;
+  background-color: #ffbe0b;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(./img/logo2022.jpg);
+}
+
+/* Compras */
+.titulocom {
+  text-align: center;
+  margin: 120px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* galeria */
+.galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  margin: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 3px;
+}
+
+.galeria .imagen {
+  width: 32%;
+  position: relative;
+  height: 250px;
+  margin-bottom: 5px;
+  -webkit-box-shadow: 0px 0px 3px 0px #f7ed61;
+          box-shadow: 0px 0px 3px 0px #f7ed61;
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(13, 14, 11, 0.774);
+  width: 100%;
+  height: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  overflow: hidden;
+}
+
+.overlay h2 {
+  color: #ffbe0b;
+  font-weight: 300px;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.imagen:hover .overlay {
+  height: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .galeria {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .galeria {
+    width: 85%;
+  }
+  .galeria .imagen {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 22px;
+  }
+  .galeria {
+    width: 98%;
+  }
+  .galeria .imagen {
+    width: 80%;
+  }
+}
+
+/* Novedades */
+.wifi {
+  background-image: url(./img/interruptorWifi.PNG);
+  height: 60vh;
+}
+
+.wifi {
+  margin: 90px;
+  background-repeat: no-repeat;
+  background-color: #ffbe0b;
+  background-position: center;
+}
+
+.distan {
+  background-image: url(./img/colgante2022.jpeg);
+  height: 60vh;
+}
+
+.distan {
+  margin: 90px;
+  background-repeat: no-repeat;
+  background-color: #ffbe0b;
+  background-position: center;
+}
+
+/* boot novedades */
+.slide2 {
+  margin-top: 80px;
+}
+
+.slide2 img {
+  height: 60vh;
+}
+
+/* Proveedores */
+#prove .completo {
+  background-color: #ffbe0b;
+  width: 1535px;
+  height: 535px;
+}
+
+#prove .completo h2 {
+  background-color: #ffbe0b;
+  color: white;
+  margin: 0 20px;
+}
+
+#prove .completo h3 {
+  color: white;
+  margin: 40px 660px;
+}
+
+#prove .completo .mapa {
+  margin: 40px 350px;
+}
+/*# sourceMappingURL=style.css.map */

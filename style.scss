@@ -1,0 +1,281 @@
+/* Electricidad-Manzanelli */
+*{
+    margin: none;
+    padding: none;
+    
+    text-decoration: none;
+}
+
+
+/* Variables */
+$colorEM: 
+(rgb(255, 190, 11)
+
+);
+
+/* mixin */
+@mixin medida {
+    height: 550px;
+    width: 10px;
+}
+
+/* Inicio */
+.inicioBody {
+    background-color: $colorEM;
+}
+
+
+
+#novedadesCompras {
+   @include medida();
+    background-image: url(../img/novedades.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+/* bootstrap */
+
+.slide {
+    margin-top: 50px;
+}
+
+.slide img {
+    height:  90vh;
+}
+
+
+.novedadesTitulo {
+    color: $colorEM;   
+}
+
+.clientes {
+    background-image: url(./img/clientes2022.jpg);
+    height: 60vh
+}
+
+.clientes {
+    background-repeat: no-repeat;
+    background-color: $colorEM;
+    background-position: center;
+}
+
+#publicacionEpec h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#publicacionEpec{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width:700px) {
+
+    .publicacionImagen{
+        display: flex;
+        width: 85%;
+        height: auto;
+    }
+       
+   
+   
+}
+
+
+#footer {
+    color: white;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Titulo Cliente */
+
+.tituloCliente {
+   padding: 130px
+   
+}
+
+.tituloCliTabla {
+    font-family: fantasy;
+}
+
+.tablaCliente {
+    font-family: fantasy;
+    background-color: $colorEM;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./img/logo2022.jpg);
+    
+    
+    
+}
+
+/* Compras */
+
+.titulocom {
+    text-align: center;
+    margin: 120px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* galeria */
+
+.galeria{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+.galeria .imagen{
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgb(247, 237, 97);
+}
+
+.imagen img{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(13, 14, 11, 0.774);
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    overflow: hidden;
+}
+
+.overlay h2{
+    color: rgb(255, 190, 11);
+    font-weight: 300px;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%);
+}
+
+.imagen:hover .overlay{
+    height: 100%;
+    cursor: pointer;   
+}
+
+@media screen and (max-width:1000px) {
+    .galeria{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .galeria{
+        width: 85%;
+    }
+
+    .galeria .imagen{
+        width: 48%;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    h2{
+        font-size: 22px;
+    }
+
+    .galeria{
+        width: 98%;
+    }
+
+    .galeria .imagen{
+        width: 80%;
+    }
+    
+}
+
+/* Novedades */
+
+.wifi {
+    background-image: url(./img/interruptorWifi.PNG);
+    height: 60vh
+}
+
+.wifi {
+    margin: 90px;
+    background-repeat: no-repeat;
+    background-color: $colorEM;
+    background-position: center;
+}
+.distan {
+    background-image: url(./img/colgante2022.jpeg);
+    height: 60vh
+}
+
+.distan {
+    margin: 90px;
+    background-repeat: no-repeat;
+    background-color: $colorEM;
+    background-position: center;
+}
+
+
+/* boot novedades */
+
+.slide2 {
+    margin-top: 80px;
+    
+    
+}
+
+.slide2 img {
+    height: 60vh
+}
+
+
+
+
+
+
+/* Proveedores */
+
+#prove .completo {
+    background-color: $colorEM;
+    width: 1535px;
+    height: 535px;
+}
+#prove .completo h2 {
+    background-color: $colorEM;
+    color: white;
+    margin: 0 20px;
+}
+
+#prove .completo h3 {
+    color: white;
+    margin: 40px 660px;
+}
+#prove .completo .mapa {
+    margin: 40px 350px;
+}
